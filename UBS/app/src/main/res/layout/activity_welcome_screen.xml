@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context="com.example.swangya.ubs.welcomeScreen">
+
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color3"
+        android:id="@+id/iblogin"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:background="@color/color2"
+        android:drawableStart="@drawable/ic_lock_outline"
+        android:textColorHint="@color/grey"
+        android:id="@+id/etPassword"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/u_logo"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="Email"
+        android:background="@color/color2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:drawableStart="@drawable/ic_account_circle"
+        android:ems="10"
+        android:id="@+id/etUserName"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/iblogin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/ibforgotpassword"
+        android:foregroundGravity="fill"
+        android:fontFamily="sans-serif"
+        android:text="Forgot Password"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="14dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/iblogin"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/ibregister"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/ibregister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
